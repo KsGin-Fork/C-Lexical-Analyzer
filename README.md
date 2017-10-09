@@ -31,4 +31,10 @@
             `/[a-zA-z_][a-zA-z0-9_]*/`
 
 **二&emsp; 项目文件描述**
-1. 待填写
+1. `/main.c`
+
+2. `/test.h`
+
+3. `/run/output.txt`
+
+4. `/run/input.c`

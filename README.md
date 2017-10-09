@@ -4,9 +4,9 @@
 1. C词法内容
     + C语言标识符
         
-        控制标识符共有 `do` , `while` , `if` , `else` , `switch` , `case` , `return` , `continue`
+        控制标识符 `do` , `while` , `if` , `else` , `switch` , `case` , `return` , `continue`
         
-        类型标识符共有 `int` , `float` , `long` , `unsigned` , `short` , `double` , `char` , `struct` , `union`
+        类型标识符 `int` , `float` , `long` , `unsigned` , `short` , `double` , `char` , `struct` , `union`
         
         特殊标识符 `main`
         

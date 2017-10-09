@@ -1,7 +1,9 @@
 # C语言词法分析器
 
 **一&emsp; C语言词法结构**
+
 1. C词法内容
+
     + C语言标识符
         
         控制标识符 `do` , `while` , `if` , `else` , `switch` , `case` , `return` , `continue`
@@ -31,10 +33,19 @@
             `/[a-zA-z_][a-zA-z0-9_]*/`
 
 **二&emsp; 项目文件描述**
-1. `/main.c`
 
-2. `/test.h`
+1. `/main.c` 主文件
 
-3. `/run/output.txt`
+2. `/lexical.h` 词法分析文件
 
-4. `/run/input.c`
+2. `/test.h` 测试代码
+
+3. `/run/output.txt` 输出文件
+
+4. `/run/input.c` 输入文件，一个完整的C语言程序源文件
+
+5. `/readme.md` 项目综述
+
+6. `/CMakeLists.txt` CMake编译配置文件
+
+7. `/cmake-build-debug` CMake运行文件

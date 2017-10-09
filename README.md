@@ -9,6 +9,8 @@
         类型标识符共有 `int` , `float` , `long` , `unsigned` , `short` , `double` , `char` , `struct` , `union`
         
         特殊标识符 `main`
+        
+        符号标识符 `+` , `-` , `*` , `/` , `[` , `]` , `{` , `}` , `(` , `)` , `&`
          
      + C语言变量
         

@@ -36,19 +36,21 @@
 
 1. `/main.c` 主文件
 
-2. `/lexical.h` 词法分析文件
+2. `/lexical.h` 词法分析类声明
 
-2. `/test.h` 测试代码
+3. `/lexical.cpp` 词法分析类实现
 
-3. `/run/output.txt` 输出文件
+4. `/test.h` 测试代码
 
-4. `/run/input.txt` 输入文件，一个完整的C语言程序源文件
+5. `/run/output.txt` 输出文件
 
-5. `/readme.md` 项目综述
+6. `/run/input.txt` 输入文件，一个完整的C语言程序源文件
 
-6. `/CMakeLists.txt` CMake编译配置文件
+7. `/readme.md` 项目综述
 
-7. `/cmake-build-debug` CMake运行文件
+8. `/CMakeLists.txt` CMake编译配置文件
+
+9. `/cmake-build-debug` CMake运行文件
 
 **三&emsp; 项目方法描述**
 

@@ -177,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/C_Lexical_Analyzer.dir/build.make CMakeFiles/C_Lexical_Analyzer.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+mfstream.o: mfstream.cpp.o
+
+.PHONY : mfstream.o
+
+# target to build an object file
+mfstream.cpp.o:
+	$(MAKE) -f CMakeFiles/C_Lexical_Analyzer.dir/build.make CMakeFiles/C_Lexical_Analyzer.dir/mfstream.cpp.o
+.PHONY : mfstream.cpp.o
+
+mfstream.i: mfstream.cpp.i
+
+.PHONY : mfstream.i
+
+# target to preprocess a source file
+mfstream.cpp.i:
+	$(MAKE) -f CMakeFiles/C_Lexical_Analyzer.dir/build.make CMakeFiles/C_Lexical_Analyzer.dir/mfstream.cpp.i
+.PHONY : mfstream.cpp.i
+
+mfstream.s: mfstream.cpp.s
+
+.PHONY : mfstream.s
+
+# target to generate assembly for a file
+mfstream.cpp.s:
+	$(MAKE) -f CMakeFiles/C_Lexical_Analyzer.dir/build.make CMakeFiles/C_Lexical_Analyzer.dir/mfstream.cpp.s
+.PHONY : mfstream.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +219,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mfstream.o"
+	@echo "... mfstream.i"
+	@echo "... mfstream.s"
 .PHONY : help
 
 

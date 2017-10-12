@@ -6,13 +6,13 @@
 
     + C语言标识符
         
-        控制标识符 `do` , `while` , `if` , `else` , `switch` , `case` , `return` , `continue`
+        控制标识符 `do` , `while` , `if` , `else` , `switch` , `case` , `return` , `continue` , `register` , `break`
         
         类型标识符 `int` , `float` , `long` , `unsigned` , `short` , `double` , `char` , `struct` , `union`
         
         特殊标识符 `main`
         
-        符号标识符 `+` , `-` , `*` , `/` , `[` , `]` , `{` , `}` , `(` , `)` , `&`
+        符号标识符 `+` , `-` , `*` , `/` , `[` , `]` , `{` , `}` , `(` , `)` , `&` , `>` , `<` , `=` , `.`
          
      + C语言变量
         
@@ -55,3 +55,55 @@
 **三&emsp; 项目方法描述**
 
 1. `main` 主启动方法
+
+**四&emsp; 项目进度**
+
+**五&emsp; 表**
+
+| value | token |
+| :---: | :---: |
+|   .   |   0   |
+|   +   |   1   |
+|   -   |   2   |
+|   *   |   3   |
+|   /   |   4   |
+|   (   |   5   |
+|   )   |   7   |
+|   [   |   8   |
+|   ]   |   9   |
+|   {   |   10  |
+|   }   |   11  |
+|   &   |   12  |
+|   <   |   13  |
+|   &#62;   |   14  |
+|   =   |   15  |
+|   :   |   16  |
+|   #   |   17  |
+|   ?   |   18  |
+|   %   |   19  |
+|   !   |   20  |
+|   '   |   21  |
+|   "   |   22  |
+|   /   |   23  |
+|   &#124;   |   24  |
+|  (digits) |   25   |
+|  (letter) |   26   |
+|  int    |   27   |
+|  float  |   28   |
+|  double |   29   |
+|  char   |   30   |
+|  long   |   31   |
+|  short  |   32   |
+|  struct |   33   |
+|  union  |   34   |
+|  unsigned  |  35  |
+|   do     |    36  |
+|  while   |    37  |
+|   if     |    38  |
+|  else   |    39 |
+|  switch |   40  |
+|  case  |    41  |
+|  return |   42  |
+|  continue |   43  |
+|  register |   44   |
+|  break    |   45   |

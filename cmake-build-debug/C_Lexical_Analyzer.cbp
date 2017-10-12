@@ -82,7 +82,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/lexical.h">
+			<Option target="C_Lexical_Analyzer"/>
+		</Unit>
 		<Unit filename="/Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/main.cpp">
+			<Option target="C_Lexical_Analyzer"/>
+		</Unit>
+		<Unit filename="/Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/test.h">
 			<Option target="C_Lexical_Analyzer"/>
 		</Unit>
 		<Unit filename="/Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/CMakeLists.txt">

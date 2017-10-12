@@ -42,10 +42,14 @@
 
 3. `/run/output.txt` 输出文件
 
-4. `/run/input.c` 输入文件，一个完整的C语言程序源文件
+4. `/run/input.txt` 输入文件，一个完整的C语言程序源文件
 
 5. `/readme.md` 项目综述
 
 6. `/CMakeLists.txt` CMake编译配置文件
 
 7. `/cmake-build-debug` CMake运行文件
+
+**三&emsp; 项目方法描述**
+
+1. `main` 主启动方法

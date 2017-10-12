@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/lexical.cpp
+lexical.h
+/Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/lexical.h
+
+/Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/lexical.h
+
+/Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/main.cpp
+iostream
+-
+fstream
+-
+sstream
+-
+

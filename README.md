@@ -42,6 +42,10 @@
 
 4. `/test.h` 测试代码
 
+5. `/mfstream.h` 文件操作声明
+
+6. `/mfstream.cpp` 文件操作实现
+
 5. `/run/output.txt` 输出文件
 
 6. `/run/input.txt` 输入文件，一个完整的C语言程序源文件

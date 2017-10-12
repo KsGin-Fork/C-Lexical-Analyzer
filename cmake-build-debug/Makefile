@@ -123,6 +123,33 @@ C_Lexical_Analyzer/fast:
 	$(MAKE) -f CMakeFiles/C_Lexical_Analyzer.dir/build.make CMakeFiles/C_Lexical_Analyzer.dir/build
 .PHONY : C_Lexical_Analyzer/fast
 
+lexical.o: lexical.cpp.o
+
+.PHONY : lexical.o
+
+# target to build an object file
+lexical.cpp.o:
+	$(MAKE) -f CMakeFiles/C_Lexical_Analyzer.dir/build.make CMakeFiles/C_Lexical_Analyzer.dir/lexical.cpp.o
+.PHONY : lexical.cpp.o
+
+lexical.i: lexical.cpp.i
+
+.PHONY : lexical.i
+
+# target to preprocess a source file
+lexical.cpp.i:
+	$(MAKE) -f CMakeFiles/C_Lexical_Analyzer.dir/build.make CMakeFiles/C_Lexical_Analyzer.dir/lexical.cpp.i
+.PHONY : lexical.cpp.i
+
+lexical.s: lexical.cpp.s
+
+.PHONY : lexical.s
+
+# target to generate assembly for a file
+lexical.cpp.s:
+	$(MAKE) -f CMakeFiles/C_Lexical_Analyzer.dir/build.make CMakeFiles/C_Lexical_Analyzer.dir/lexical.cpp.s
+.PHONY : lexical.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... C_Lexical_Analyzer"
+	@echo "... lexical.o"
+	@echo "... lexical.i"
+	@echo "... lexical.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

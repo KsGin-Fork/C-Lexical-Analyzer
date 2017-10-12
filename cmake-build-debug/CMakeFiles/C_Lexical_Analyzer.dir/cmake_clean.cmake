@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/C_Lexical_Analyzer.dir/main.cpp.o"
+  "CMakeFiles/C_Lexical_Analyzer.dir/lexical.cpp.o"
   "C_Lexical_Analyzer.pdb"
   "C_Lexical_Analyzer"
 )

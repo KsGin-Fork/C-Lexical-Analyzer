@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/lexical.cpp">
+			<Option target="C_Lexical_Analyzer"/>
+		</Unit>
 		<Unit filename="/Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/lexical.h">
 			<Option target="C_Lexical_Analyzer"/>
 		</Unit>

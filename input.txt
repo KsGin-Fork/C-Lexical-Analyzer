@@ -1,12 +1,11 @@
 /*
  * File   : input
- * Author : KsGin 
- * Date   : 2017/10/12
  */
-//asd879
-2134  123 2421
 
-int
-main  main1
+//aa
 
-const char s = 2
+const char s = 2;
+
+enum { ABCD = 2 }
+
+cha

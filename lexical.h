@@ -16,11 +16,16 @@ private:
     bool is_letter(char &i);
 
     bool is_digit(char &i);
+
+    bool is_not_end(std::string::iterator it , const std::string &code_str , int n);
+
+    void parse_letter(std::string::iterator &it , std::string::iterator end , std::vector<std::pair<std::string, int>> &ret);
+
 public:
     ~lexical();
     lexical();
     /*定义公开接口*/
-    int parse(std::string code_str , std::vector<std::pair<std::string , int>>);
+    int parse(std::string code_str , std::vector<std::pair<std::string , int>> &ret);
 
 };
 

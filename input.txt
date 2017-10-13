@@ -3,5 +3,10 @@
  * Author : KsGin 
  * Date   : 2017/10/12
  */
+//asd879
+2134  123 2421
 
-213412412341234
+int
+main  main1
+
+const char s = 2

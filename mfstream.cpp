@@ -9,7 +9,7 @@
 void mfstream::ReadFile(const std::string &file_path , std::string &text){
     std::ifstream in(file_path);
     std::istreambuf_iterator<char> beg(in), end;
-    text = std::string(beg,end);
+    text.append(std::string(beg,end));
     in.close();
 }
 

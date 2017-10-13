@@ -6,11 +6,11 @@
 
     + C语言标识符
         
-        控制标识符 `do` , `while` , `if` , `else` , `switch` , `case` , `return` , `continue` , `register` , `break`
+        控制标识符 `do` , `while` , `if` , `else` , `switch` , `case` , `return` , `continue` , `register` , `break` ,`for`
         
-        类型标识符 `int` , `float` , `long` , `unsigned` , `short` , `double` , `char` , `struct` , `union`
+        类型标识符 `int` , `float` , `long` , `unsigned` , `short` , `double` , `char` , `struct` , `union` , `enum` , `typedef`, `signed`
         
-        特殊标识符 `main`
+        特殊标识符 `const` , `extern` , `default` , `static` , `volatile`
         
         符号标识符 `+` , `-` , `*` , `/` , `[` , `]` , `{` , `}` , `(` , `)` , `&` , `>` , `<` , `=` , `.`
          
@@ -60,7 +60,7 @@
 
 1. `main` 主启动方法
 
-**四&emsp; 项目进度**
+**四&emsp; 项目进度** 
 
 **五&emsp; 表**
 
@@ -111,3 +111,9 @@
 |  continue |   43  |
 |  register |   44   |
 |  break    |   45   |
+|  for      |   46   |
+|  enum     |   47   |
+|  typedef  |   48   |
+|  signed   |   49   |
+|  const    |   50   |
+

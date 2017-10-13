@@ -341,19 +341,19 @@ int lexical::parse(std::string code_str, std::vector<std::pair<std::string, int>
                 break;
             }
             case '.': {
-                ret.emplace_back('.' , 0);
+                ret.emplace_back("." , 0);
                 break;
             }
             case '+': {
-                ret.emplace_back('+' , 1);
+                ret.emplace_back("+" , 1);
                 break;
             }
             case '-': {
-                ret.emplace_back('-' , 2);
+                ret.emplace_back("-" , 2);
                 break;
             }
             case '*': {
-                ret.emplace_back('*' , 3);
+                ret.emplace_back("*" , 3);
                 break;
             }
             case '/': {
@@ -375,75 +375,85 @@ int lexical::parse(std::string code_str, std::vector<std::pair<std::string, int>
                 break;
             }
             case '(': {
-                ret.emplace_back('(' , 5);
+                ret.emplace_back("(" , 5);
                 break;
             }
             case ')': {
-                ret.emplace_back('+)' , 7);
+                ret.emplace_back(")" , 6);
                 break;
             }
             case '[': {
-                ret.emplace_back('[' , 8);
+                ret.emplace_back("[" , 7);
                 break;
             }
             case ']': {
-                ret.emplace_back(']' , 9);
+                ret.emplace_back("]" , 8);
                 break;
             }
             case '{': {
-                ret.emplace_back('{' , 10);
+                ret.emplace_back("{" , 9);
                 break;
             }
             case '}': {
-                ret.emplace_back('}' , 11);
+                ret.emplace_back("}" , 10);
                 break;
             }
             case '&': {
-                ret.emplace_back('}' , 10);
+                if((it+1) != code_str.end() && *(it+1) == '&'){
+                    ret.emplace_back("&&" , 12);
+                    it++;
+                    break;
+                }
+                ret.emplace_back("&" , 11);
                 break;
             }
             case '<': {
-                ret.emplace_back('}' , 10);
+                ret.emplace_back("<" , 13);
                 break;
             }
             case '>': {
-                ret.emplace_back('}' , 10);
+                ret.emplace_back(">" , 14);
                 break;
             }
             case '=': {
-                ret.emplace_back('}' , 10);
+                ret.emplace_back("=" , 15);
                 break;
             }
             case ':': {
-                ret.emplace_back('}' , 10);
+                ret.emplace_back(":" , 16);
                 break;
             }
             case '#': {
-                ret.emplace_back('}' , 10);
+                ret.emplace_back("#" , 17);
                 break;
             }
             case '?': {
-                ret.emplace_back('}' , 10);
+                ret.emplace_back("?" , 18);
                 break;
             }
             case '%': {
-                ret.emplace_back('}' , 10);
+                ret.emplace_back("%" , 19);
                 break;
             }
             case '!': {
-                ret.emplace_back('}' , 10);
+                ret.emplace_back("!" , 20);
                 break;
             }
             case '\'': {
-                ret.emplace_back('}' , 10);
+                ret.emplace_back("\'" , 21);
                 break;
             }
             case '\"': {
-                ret.emplace_back('}' , 10);
+                ret.emplace_back("\"" , 22);
                 break;
             }
             case '|': {
-                ret.emplace_back('}' , 10);
+                if((it+1) != code_str.end() && *(it+1) == '|'){
+                    ret.emplace_back("||" , 24);
+                    it++;
+                    break;
+                }
+                ret.emplace_back("|" , 23);
                 break;
             }
 
@@ -456,7 +466,7 @@ int lexical::parse(std::string code_str, std::vector<std::pair<std::string, int>
 }
 
 bool lexical::is_letter(char &i) {
-    return i >= 'a' && i <= 'z' || i >= 'A' && i <= 'Z' || i == '_';
+    return (i >= 'a' && i <= 'z') || (i >= 'A' && i <= 'Z') || i == '_';
 }
 
 bool lexical::is_digit(char &i) {

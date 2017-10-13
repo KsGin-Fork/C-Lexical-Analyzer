@@ -487,6 +487,7 @@ void lexical::parse_letter(std::string::iterator &it, std::string::iterator end,
         word_str << *it;
         it++;
     }
+    it--; //回溯一个字符
     ret.emplace_back(word_str.str(), 26);
 }
 

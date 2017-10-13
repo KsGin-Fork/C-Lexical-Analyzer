@@ -7,16 +7,34 @@
 #IncludeRegexTransform: 
 
 /Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/lexical.cpp
+vector
+-
 lexical.h
 /Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/lexical.h
+sstream
+-
 
 /Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/lexical.h
+string
+-
 
 /Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/main.cpp
 iostream
 -
-fstream
+mfstream.h
+/Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/mfstream.h
+lexical.h
+/Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/lexical.h
+vector
 -
-sstream
+
+/Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/mfstream.cpp
+mfstream.h
+/Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/mfstream.h
+
+/Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/mfstream.h
+string
+-
+fstream
 -
 

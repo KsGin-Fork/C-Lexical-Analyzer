@@ -68,8 +68,7 @@ int lexical::parse(std::string code_str, std::vector<std::pair<std::string, int>
             }
                 //解析标识符或者变量
             case 'a':
-            case 'b':
-            {
+            case 'b': {
                 if (*(it + 1) == 'r' && *(it + 2) == 'e' && *(it + 3) == 'a' && *(it + 4) == 'k'
                     && !is_letter(*(it + 5)) && !is_digit(*(it + 5))) {
                     it += 5;
@@ -105,8 +104,7 @@ int lexical::parse(std::string code_str, std::vector<std::pair<std::string, int>
                 }
 
             }
-            case 'd':
-            {
+            case 'd': {
                 if (*(it + 1) == 'o' && !is_letter(*(it + 2)) && !is_digit(*(it + 2))) {
                     it += 2;
                     ret.emplace_back("do", 36);
@@ -114,14 +112,30 @@ int lexical::parse(std::string code_str, std::vector<std::pair<std::string, int>
                 }
 
                 if (*(it + 1) == 'o' && *(it + 2) == 'u' && *(it + 3) == 'b'
-                    && *(it + 4) == 'l' && *(it+5) == 'e'
+                    && *(it + 4) == 'l' && *(it + 5) == 'e'
                     && !is_letter(*(it + 6)) && !is_digit(*(it + 6))) {
                     it += 6;
                     ret.emplace_back("double", 29);
                     break;
                 }
+
+                if (*(it + 1) == 'e' && *(it + 2) == 'f' && *(it + 3) == 'a'
+                    && *(it + 4) == 'i' && *(it + 5) == 'l' && *(it+6) == 't'
+                    && !is_letter(*(it + 7)) && !is_digit(*(it + 7))) {
+                    it += 7;
+                    ret.emplace_back("default", 51);
+                    break;
+                }
             }
             case 'e':
+            {
+                if (*(it + 1) == 'n' && *(it+2) == 'u' && *(it+3) == 'm'
+                    && !is_letter(*(it + 4)) && !is_digit(*(it + 4))) {
+                    it += 4;
+                    ret.emplace_back("enum", 47);
+                    break;
+                }
+            }
             case 'f':
             case 'g':
             case 'h':
@@ -175,9 +189,11 @@ int lexical::parse(std::string code_str, std::vector<std::pair<std::string, int>
                     word_str << *it;
                     it++;
                 }
-                ret.emplace_back(word_str.str() , 26);
+                ret.emplace_back(word_str.str(), 26);
                 break;
             }
+            default:
+                break;
         }
     }
 

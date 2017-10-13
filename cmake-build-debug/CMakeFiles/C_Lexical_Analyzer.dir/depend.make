@@ -4,5 +4,10 @@
 CMakeFiles/C_Lexical_Analyzer.dir/lexical.cpp.o: ../lexical.cpp
 CMakeFiles/C_Lexical_Analyzer.dir/lexical.cpp.o: ../lexical.h
 
+CMakeFiles/C_Lexical_Analyzer.dir/main.cpp.o: ../lexical.h
 CMakeFiles/C_Lexical_Analyzer.dir/main.cpp.o: ../main.cpp
+CMakeFiles/C_Lexical_Analyzer.dir/main.cpp.o: ../mfstream.h
+
+CMakeFiles/C_Lexical_Analyzer.dir/mfstream.cpp.o: ../mfstream.cpp
+CMakeFiles/C_Lexical_Analyzer.dir/mfstream.cpp.o: ../mfstream.h
 

@@ -116,4 +116,8 @@
 |  typedef  |   48   |
 |  signed   |   49   |
 |  const    |   50   |
+|  default  |   51   |
+|  extern   |   52   |
+|  static   |   53   |
+|  volatile |   54   |
 

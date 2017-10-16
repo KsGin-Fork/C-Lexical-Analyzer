@@ -1,6 +1,6 @@
 /*
  * File   : lexical
- * Author : KsGin 
+ * Author : KsGin
  * Date   : 2017/10/12
  */
 
@@ -14,6 +14,33 @@ lexical::~lexical() {
 
 lexical::lexical() {
 
+}
+
+
+bool lexical::is_letter(char &i) {
+    return (i >= 'a' && i <= 'z') || (i >= 'A' && i <= 'Z') || i == '_';
+}
+
+bool lexical::is_digit(char &i) {
+    return i >= '0' && i <= '9';
+}
+
+bool lexical::is_not_end(std::string::iterator it, const std::string &code_str, int n) {
+    for (int i = 1; i < n; ++i) {
+        if ((it + i) == code_str.end()) return false;
+    }
+    return true;
+}
+
+void lexical::parse_letter(std::string::iterator &it, std::string::iterator end,
+                           std::vector<std::pair<std::string, int>> &ret) {
+    std::stringstream word_str;
+    while (it != end && is_letter(*it) || is_digit(*it)) {
+        word_str << *it;
+        it++;
+    }
+    it--; //回溯一个字符
+    ret.emplace_back(word_str.str(), 26);
 }
 
 int lexical::parse(std::string code_str, std::vector<std::pair<std::string, int>> &ret) {
@@ -463,31 +490,5 @@ int lexical::parse(std::string code_str, std::vector<std::pair<std::string, int>
     }
 
     return 0;
-}
-
-bool lexical::is_letter(char &i) {
-    return (i >= 'a' && i <= 'z') || (i >= 'A' && i <= 'Z') || i == '_';
-}
-
-bool lexical::is_digit(char &i) {
-    return i >= '0' && i <= '9';
-}
-
-bool lexical::is_not_end(std::string::iterator it, const std::string &code_str, int n) {
-    for (int i = 1; i < n; ++i) {
-        if ((it + i) == code_str.end()) return false;
-    }
-    return true;
-}
-
-void lexical::parse_letter(std::string::iterator &it, std::string::iterator end,
-                           std::vector<std::pair<std::string, int>> &ret) {
-    std::stringstream word_str;
-    while (it != end && is_letter(*it) || is_digit(*it)) {
-        word_str << *it;
-        it++;
-    }
-    it--; //回溯一个字符
-    ret.emplace_back(word_str.str(), 26);
 }
 

@@ -22,9 +22,9 @@
             
         + 文法描述
             
-            `W = ( letter | _ ) ( letter | _ | digits)*`
+            `W = ( word | _ ) ( word | _ | digits)*`
             
-            `letter = { a | ... | z | A | ... | Z }`
+            `word = { a | ... | z | A | ... | Z }`
             
             `digits = { 0 | ... | 9 }`
             
@@ -98,7 +98,7 @@
 |   &#124;   |   23  |
 |   &#124;&#124;   |   24  |
 |  (digits) |   25   |
-|  (letter) |   26   |
+|  (word) |   26   |
 |  int    |   27   |
 |  float  |   28   |
 |  double |   29   |

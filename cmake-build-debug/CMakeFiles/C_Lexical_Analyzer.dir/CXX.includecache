@@ -27,6 +27,8 @@ lexical.h
 /Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/lexical.h
 vector
 -
+sstream
+-
 
 /Users/KsGin/Documents/CxxProjects/C-Lexical-Analyzer/mfstream.cpp
 mfstream.h
